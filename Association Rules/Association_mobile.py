@@ -28,7 +28,7 @@ import pandas as pd
 from mlxtend.frequent_patterns import apriori,association_rules
 #let us import the book data set
 mobile=pd.read_csv("c:/360DG/Datasets/myphonedata.csv")
-
+#This loads data set
 frequent_itemsets=apriori(mobile,min_support=0.03,max_len=4,use_colnames=True)
 #items or item set must have minimum support value 3 % sale i.e.0.03
 #you will get support values for 1,2,3 and 4 max items
